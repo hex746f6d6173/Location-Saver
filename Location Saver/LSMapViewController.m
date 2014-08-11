@@ -52,6 +52,7 @@
      NSDictionary *dict = (NSDictionary *)obj;
      
      LSLocation *pin = [LSLocation new];
+     pin.title = dict[@"title"];
      pin.coordinate = CLLocationCoordinate2DMake([(NSNumber *)dict[@"lat"] doubleValue], [(NSNumber *)dict[@"lon"] doubleValue]);
      
      [_mapView addAnnotation:pin];
@@ -99,7 +100,9 @@
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
-  
+  if ([view.annotation isKindOfClass:[MKUserLocation class]]) {
+    [self tapOnMap:nil];
+  }
 }
 
 @end
