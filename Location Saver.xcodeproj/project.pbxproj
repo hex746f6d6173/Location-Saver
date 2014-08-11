@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF7B06CB1998D37200D29606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CA1998D37200D29606 /* Foundation.framework */; };
+		FF7B06CD1998D37200D29606 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CC1998D37200D29606 /* CoreGraphics.framework */; };
+		FF7B06CF1998D37200D29606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CE1998D37200D29606 /* UIKit.framework */; };
+		FF7B06D51998D37200D29606 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06D31998D37200D29606 /* InfoPlist.strings */; };
+		FF7B06D71998D37200D29606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06D61998D37200D29606 /* main.m */; };
+		FF7B06DB1998D37200D29606 /* LSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06DA1998D37200D29606 /* LSAppDelegate.m */; };
+		FF7B06DE1998D37200D29606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06DC1998D37200D29606 /* Main.storyboard */; };
+		FF7B06E11998D37200D29606 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06E01998D37200D29606 /* LSViewController.m */; };
+		FF7B06E31998D37200D29606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06E21998D37200D29606 /* Images.xcassets */; };
+		FF7B06EA1998D37200D29606 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06E91998D37200D29606 /* XCTest.framework */; };
+		FF7B06EB1998D37200D29606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CA1998D37200D29606 /* Foundation.framework */; };
+		FF7B06EC1998D37300D29606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CE1998D37200D29606 /* UIKit.framework */; };
+		FF7B06F41998D37300D29606 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06F21998D37300D29606 /* InfoPlist.strings */; };
+		FF7B06F61998D37300D29606 /* Location_SaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06F51998D37300D29606 /* Location_SaverTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF7B06ED1998D37300D29606 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF7B06BF1998D37200D29606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF7B06C61998D37200D29606;
+			remoteInfo = "Location Saver";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF7B06C71998D37200D29606 /* Location Saver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Location Saver.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7B06CA1998D37200D29606 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FF7B06CC1998D37200D29606 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FF7B06CE1998D37200D29606 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FF7B06D21998D37200D29606 /* Location Saver-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Location Saver-Info.plist"; sourceTree = "<group>"; };
+		FF7B06D41998D37200D29606 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF7B06D61998D37200D29606 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FF7B06D81998D37200D29606 /* Location Saver-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Location Saver-Prefix.pch"; sourceTree = "<group>"; };
+		FF7B06D91998D37200D29606 /* LSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAppDelegate.h; sourceTree = "<group>"; };
+		FF7B06DA1998D37200D29606 /* LSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAppDelegate.m; sourceTree = "<group>"; };
+		FF7B06DD1998D37200D29606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF7B06DF1998D37200D29606 /* LSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
+		FF7B06E01998D37200D29606 /* LSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
+		FF7B06E21998D37200D29606 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FF7B06E81998D37200D29606 /* Location SaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location SaverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF7B06E91998D37200D29606 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		FF7B06F11998D37300D29606 /* Location SaverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Location SaverTests-Info.plist"; sourceTree = "<group>"; };
+		FF7B06F31998D37300D29606 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF7B06F51998D37300D29606 /* Location_SaverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location_SaverTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF7B06C41998D37200D29606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7B06CD1998D37200D29606 /* CoreGraphics.framework in Frameworks */,
+				FF7B06CF1998D37200D29606 /* UIKit.framework in Frameworks */,
+				FF7B06CB1998D37200D29606 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7B06E51998D37200D29606 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7B06EA1998D37200D29606 /* XCTest.framework in Frameworks */,
+				FF7B06EC1998D37300D29606 /* UIKit.framework in Frameworks */,
+				FF7B06EB1998D37200D29606 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF7B06BE1998D37200D29606 = {
+			isa = PBXGroup;
+			children = (
+				FF7B06D01998D37200D29606 /* Location Saver */,
+				FF7B06EF1998D37300D29606 /* Location SaverTests */,
+				FF7B06C91998D37200D29606 /* Frameworks */,
+				FF7B06C81998D37200D29606 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF7B06C81998D37200D29606 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B06C71998D37200D29606 /* Location Saver.app */,
+				FF7B06E81998D37200D29606 /* Location SaverTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF7B06C91998D37200D29606 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B06CA1998D37200D29606 /* Foundation.framework */,
+				FF7B06CC1998D37200D29606 /* CoreGraphics.framework */,
+				FF7B06CE1998D37200D29606 /* UIKit.framework */,
+				FF7B06E91998D37200D29606 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF7B06D01998D37200D29606 /* Location Saver */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B06D91998D37200D29606 /* LSAppDelegate.h */,
+				FF7B06DA1998D37200D29606 /* LSAppDelegate.m */,
+				FF7B06DC1998D37200D29606 /* Main.storyboard */,
+				FF7B06DF1998D37200D29606 /* LSViewController.h */,
+				FF7B06E01998D37200D29606 /* LSViewController.m */,
+				FF7B06E21998D37200D29606 /* Images.xcassets */,
+				FF7B06D11998D37200D29606 /* Supporting Files */,
+			);
+			path = "Location Saver";
+			sourceTree = "<group>";
+		};
+		FF7B06D11998D37200D29606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B06D21998D37200D29606 /* Location Saver-Info.plist */,
+				FF7B06D31998D37200D29606 /* InfoPlist.strings */,
+				FF7B06D61998D37200D29606 /* main.m */,
+				FF7B06D81998D37200D29606 /* Location Saver-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FF7B06EF1998D37300D29606 /* Location SaverTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B06F51998D37300D29606 /* Location_SaverTests.m */,
+				FF7B06F01998D37300D29606 /* Supporting Files */,
+			);
+			path = "Location SaverTests";
+			sourceTree = "<group>";
+		};
+		FF7B06F01998D37300D29606 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF7B06F11998D37300D29606 /* Location SaverTests-Info.plist */,
+				FF7B06F21998D37300D29606 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF7B06C61998D37200D29606 /* Location Saver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7B06F91998D37300D29606 /* Build configuration list for PBXNativeTarget "Location Saver" */;
+			buildPhases = (
+				FF7B06C31998D37200D29606 /* Sources */,
+				FF7B06C41998D37200D29606 /* Frameworks */,
+				FF7B06C51998D37200D29606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Location Saver";
+			productName = "Location Saver";
+			productReference = FF7B06C71998D37200D29606 /* Location Saver.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF7B06E71998D37200D29606 /* Location SaverTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF7B06FC1998D37300D29606 /* Build configuration list for PBXNativeTarget "Location SaverTests" */;
+			buildPhases = (
+				FF7B06E41998D37200D29606 /* Sources */,
+				FF7B06E51998D37200D29606 /* Frameworks */,
+				FF7B06E61998D37200D29606 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF7B06EE1998D37300D29606 /* PBXTargetDependency */,
+			);
+			name = "Location SaverTests";
+			productName = "Location SaverTests";
+			productReference = FF7B06E81998D37200D29606 /* Location SaverTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF7B06BF1998D37200D29606 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Tomas Harkema";
+				TargetAttributes = {
+					FF7B06E71998D37200D29606 = {
+						TestTargetID = FF7B06C61998D37200D29606;
+					};
+				};
+			};
+			buildConfigurationList = FF7B06C21998D37200D29606 /* Build configuration list for PBXProject "Location Saver" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF7B06BE1998D37200D29606;
+			productRefGroup = FF7B06C81998D37200D29606 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF7B06C61998D37200D29606 /* Location Saver */,
+				FF7B06E71998D37200D29606 /* Location SaverTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF7B06C51998D37200D29606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7B06E31998D37200D29606 /* Images.xcassets in Resources */,
+				FF7B06D51998D37200D29606 /* InfoPlist.strings in Resources */,
+				FF7B06DE1998D37200D29606 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7B06E61998D37200D29606 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7B06F41998D37300D29606 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF7B06C31998D37200D29606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7B06D71998D37200D29606 /* main.m in Sources */,
+				FF7B06DB1998D37200D29606 /* LSAppDelegate.m in Sources */,
+				FF7B06E11998D37200D29606 /* LSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF7B06E41998D37200D29606 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7B06F61998D37300D29606 /* Location_SaverTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF7B06EE1998D37300D29606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF7B06C61998D37200D29606 /* Location Saver */;
+			targetProxy = FF7B06ED1998D37300D29606 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF7B06D31998D37200D29606 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7B06D41998D37200D29606 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FF7B06DC1998D37200D29606 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7B06DD1998D37200D29606 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF7B06F21998D37300D29606 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF7B06F31998D37300D29606 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF7B06F71998D37300D29606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FF7B06F81998D37300D29606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF7B06FA1998D37300D29606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Location Saver/Location Saver-Prefix.pch";
+				INFOPLIST_FILE = "Location Saver/Location Saver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FF7B06FB1998D37300D29606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Location Saver/Location Saver-Prefix.pch";
+				INFOPLIST_FILE = "Location Saver/Location Saver-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FF7B06FD1998D37300D29606 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Location Saver.app/Location Saver";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Location Saver/Location Saver-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Location SaverTests/Location SaverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		FF7B06FE1998D37300D29606 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Location Saver.app/Location Saver";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Location Saver/Location Saver-Prefix.pch";
+				INFOPLIST_FILE = "Location SaverTests/Location SaverTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF7B06C21998D37200D29606 /* Build configuration list for PBXProject "Location Saver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7B06F71998D37300D29606 /* Debug */,
+				FF7B06F81998D37300D29606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF7B06F91998D37300D29606 /* Build configuration list for PBXNativeTarget "Location Saver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7B06FA1998D37300D29606 /* Debug */,
+				FF7B06FB1998D37300D29606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FF7B06FC1998D37300D29606 /* Build configuration list for PBXNativeTarget "Location SaverTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF7B06FD1998D37300D29606 /* Debug */,
+				FF7B06FE1998D37300D29606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF7B06BF1998D37200D29606 /* Project object */;
+}
