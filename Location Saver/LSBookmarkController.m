@@ -12,9 +12,12 @@
 #import "LSLocation.h"
 #import "LSLocationDetail.h"
 
-@interface LSBookmarkController ()
+@import MessageUI;
+
+@interface LSBookmarkController () <MFMailComposeViewControllerDelegate>
 
 @property (strong, nonatomic) NSArray *locations;
+@property (strong, nonatomic) MFMailComposeViewController *mailView;
 
 @end
 
@@ -85,7 +88,31 @@
   NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
   
   dvc.title = [_locations objectAtIndex:indexPath.row][@"title"];
+  dvc.index = indexPath.row;
   dvc.location = CLLocationCoordinate2DMake([(NSNumber *)[_locations objectAtIndex:indexPath.row][@"lat"] doubleValue], [(NSNumber *)[_locations objectAtIndex:indexPath.row][@"lon"] doubleValue]);
+}
+
+- (IBAction)share:(id)sender {
+  __block NSString *mailString = @"";
+  
+  [_locations enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    NSDictionary *dict = (NSDictionary *)obj;
+    mailString = [NSString stringWithFormat:@"%@ \n\n%@:\nLAT: %f\nLONG: %f", mailString, dict[@"title"], [dict[@"lat"] doubleValue], [dict[@"lon"] doubleValue]];
+  }];
+  
+  self.mailView = [[MFMailComposeViewController alloc] init];
+  
+  self.mailView.mailComposeDelegate = self;
+  
+  [self.mailView setSubject:@"Lijstje met locaties"];
+  NSString *emailBody = mailString;
+  [self.mailView setMessageBody:emailBody isHTML:NO];
+  [self presentViewController:self.mailView animated:YES completion:nil];
+}
+
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

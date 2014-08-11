@@ -109,7 +109,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" systemItem="bookmarks" id="ffF-ay-hQv"/>
-                    <navigationItem key="navigationItem" title="Bookmarks" id="hoQ-lW-8dZ"/>
+                    <navigationItem key="navigationItem" title="Bookmarks" id="hoQ-lW-8dZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="0sC-bl-8Hn">
+                            <connections>
+                                <action selector="share:" destination="Zcf-ZX-G6o" id="1pA-Ez-W0G"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVj-n9-rP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +163,13 @@
                             <constraint firstAttribute="bottom" secondItem="C50-1R-BtO" secondAttribute="bottom" id="u8o-nS-Jlk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0Rf-Hx-0D3"/>
+                    <navigationItem key="navigationItem" id="0Rf-Hx-0D3">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="bVy-wG-Mh5">
+                            <connections>
+                                <action selector="remove:" destination="dXa-BZ-MSK" id="oGn-Z8-apn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="detailMap" destination="C50-1R-BtO" id="u48-MB-9Xy"/>
                         <outlet property="lat" destination="AsE-V8-dLg" id="ppT-QS-pwf"/>

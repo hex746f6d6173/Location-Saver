@@ -36,4 +36,14 @@
   return [[NSUserDefaults standardUserDefaults] objectForKey:@"locations"];
 }
 
++ (void)removeLocationAtIndex:(NSUInteger)index
+{
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  NSMutableArray *set = [(NSArray *)[defaults objectForKey:@"locations"] mutableCopy];
+  [set removeObjectAtIndex:index];
+  
+  [defaults setObject:set forKey:@"locations"];
+  [defaults synchronize];
+}
+
 @end

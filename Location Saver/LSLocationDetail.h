@@ -16,4 +16,6 @@
 @property (strong, nonatomic) NSString *locationTitle;
 @property (assign, nonatomic) CLLocationCoordinate2D location;
 
+@property (assign, nonatomic) NSUInteger index;
+
 @end

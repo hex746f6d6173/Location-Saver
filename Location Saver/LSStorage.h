@@ -14,5 +14,6 @@
 
 + (void)saveLocation:(LSLocation *)location;
 + (NSArray *)getLocations;
++ (void)removeLocationAtIndex:(NSUInteger)index;
 
 @end

@@ -20,6 +20,8 @@
 
 @property (assign, nonatomic) CLLocationCoordinate2D currentLocation;
 
+@property (strong, nonatomic) NSArray *locations;
+
 @end
 
 @implementation LSMapViewController
@@ -42,6 +44,23 @@
   
   UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnMap:)];
   [_mapView addGestureRecognizer:tapGesture];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+  [_mapView removeAnnotations:[_mapView annotations]];
+  _locations = [LSStorage getLocations];
+  
+   [_locations enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+     NSDictionary *dict = (NSDictionary *)obj;
+     
+     LSLocation *pin = [LSLocation new];
+     pin.coordinate = CLLocationCoordinate2DMake([(NSNumber *)dict[@"lat"] doubleValue], [(NSNumber *)dict[@"lon"] doubleValue]);
+     
+     [_mapView addAnnotation:pin];
+     
+   }];
+  [super viewWillAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,11 +88,6 @@
   CLLocationCoordinate2D locCoord = [_mapView convertPoint:point toCoordinateFromView:_mapView];
   
   NSLog(@"TAP ON MAP: %f", locCoord.latitude);
-  
-  LSLocation *pin = [LSLocation new];
-  pin.coordinate = locCoord;
-  
-  [_mapView addAnnotation:pin];
   
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Add bookmark" message:@"Save the current location!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
   alert.alertViewStyle = UIAlertViewStylePlainTextInput;
