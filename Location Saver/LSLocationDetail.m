@@ -51,7 +51,6 @@
   
   LSLocation *loc = [LSLocation new];
   loc.coordinate = _location;
-  
   [_detailMap addAnnotation:loc];
   
   _lat.text = [NSString stringWithFormat:@"%f", _location.latitude];

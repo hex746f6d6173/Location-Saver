@@ -41,9 +41,6 @@
   // Do any additional setup after loading the view.
     
   _mapView.delegate = self;
-  
-  UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapOnMap:)];
-  [_mapView addGestureRecognizer:tapGesture];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -80,15 +77,8 @@
   [mapView setRegion:region animated:YES];
 }
 
--(void)tapOnMap:(UIGestureRecognizer*)sender
+- (IBAction)tapOnMap:(id)sender
 {
-  NSLog(@"TAP ON MAP: %@", sender);
-  
-  CGPoint point = [sender locationInView:_mapView];
-  CLLocationCoordinate2D locCoord = [_mapView convertPoint:point toCoordinateFromView:_mapView];
-  
-  NSLog(@"TAP ON MAP: %f", locCoord.latitude);
-  
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Add bookmark" message:@"Save the current location!" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"OK", nil];
   alert.alertViewStyle = UIAlertViewStylePlainTextInput;
   [alert show];

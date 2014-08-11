@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Map View Controller - Current Location-->
         <scene sceneID="lwr-0x-Dul">
             <objects>
                 <viewController id="OoR-g9-KA0" customClass="LSMapViewController" sceneMemberID="viewController">
@@ -30,13 +30,36 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="search" id="gd5-kq-0x4"/>
+                    <navigationItem key="navigationItem" title="Current Location" id="iQr-TZ-9w0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="6CF-RK-jVI">
+                            <connections>
+                                <action selector="tapOnMap:" destination="OoR-g9-KA0" id="CCu-ai-T91"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="ES5-H8-kbg" id="Rab-5q-elR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JiU-ea-S4F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="884" y="268"/>
+            <point key="canvasLocation" x="1322" y="263"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NPP-PS-4xl">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="jM5-5m-G19" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" systemItem="search" id="hp0-EN-3rh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zvp-b4-9HD">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OoR-g9-KA0" kind="relationship" relationship="rootViewController" id="grK-oW-dcL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKQ-he-f9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884" y="263"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="rAh-cz-2Fp">
@@ -49,7 +72,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="OoR-g9-KA0" kind="relationship" relationship="viewControllers" id="Sy2-Zc-hrU"/>
+                        <segue destination="jM5-5m-G19" kind="relationship" relationship="viewControllers" id="3Fe-dg-B3T"/>
                         <segue destination="Z6w-9T-wDc" kind="relationship" relationship="viewControllers" id="23y-Hj-BeS"/>
                     </connections>
                 </tabBarController>
