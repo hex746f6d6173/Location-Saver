@@ -14,13 +14,19 @@
 		FF7B06D71998D37200D29606 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06D61998D37200D29606 /* main.m */; };
 		FF7B06DB1998D37200D29606 /* LSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06DA1998D37200D29606 /* LSAppDelegate.m */; };
 		FF7B06DE1998D37200D29606 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06DC1998D37200D29606 /* Main.storyboard */; };
-		FF7B06E11998D37200D29606 /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06E01998D37200D29606 /* LSViewController.m */; };
 		FF7B06E31998D37200D29606 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06E21998D37200D29606 /* Images.xcassets */; };
 		FF7B06EA1998D37200D29606 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06E91998D37200D29606 /* XCTest.framework */; };
 		FF7B06EB1998D37200D29606 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CA1998D37200D29606 /* Foundation.framework */; };
 		FF7B06EC1998D37300D29606 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B06CE1998D37200D29606 /* UIKit.framework */; };
 		FF7B06F41998D37300D29606 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF7B06F21998D37300D29606 /* InfoPlist.strings */; };
 		FF7B06F61998D37300D29606 /* Location_SaverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B06F51998D37300D29606 /* Location_SaverTests.m */; };
+		FF7B07011998D55600D29606 /* LSMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B07001998D55600D29606 /* LSMapViewController.m */; };
+		FF7B07031998D5A300D29606 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B07021998D5A300D29606 /* CoreLocation.framework */; };
+		FF7B07051998D5FD00D29606 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7B07041998D5FD00D29606 /* MapKit.framework */; };
+		FF7B070B1998E87B00D29606 /* LSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B070A1998E87B00D29606 /* LSLocation.m */; };
+		FF7B070E1998F26E00D29606 /* LSStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B070D1998F26E00D29606 /* LSStorage.m */; };
+		FF7B07111998F47800D29606 /* LSBookmarkController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B07101998F47800D29606 /* LSBookmarkController.m */; };
+		FF7B07141998FD5600D29606 /* LSLocationDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = FF7B07131998FD5600D29606 /* LSLocationDetail.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +51,24 @@
 		FF7B06D91998D37200D29606 /* LSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAppDelegate.h; sourceTree = "<group>"; };
 		FF7B06DA1998D37200D29606 /* LSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAppDelegate.m; sourceTree = "<group>"; };
 		FF7B06DD1998D37200D29606 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FF7B06DF1998D37200D29606 /* LSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
-		FF7B06E01998D37200D29606 /* LSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
 		FF7B06E21998D37200D29606 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FF7B06E81998D37200D29606 /* Location SaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location SaverTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7B06E91998D37200D29606 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		FF7B06F11998D37300D29606 /* Location SaverTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Location SaverTests-Info.plist"; sourceTree = "<group>"; };
 		FF7B06F31998D37300D29606 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FF7B06F51998D37300D29606 /* Location_SaverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location_SaverTests.m; sourceTree = "<group>"; };
+		FF7B06FF1998D55600D29606 /* LSMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSMapViewController.h; sourceTree = "<group>"; };
+		FF7B07001998D55600D29606 /* LSMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = sourcecode.c.objc; path = LSMapViewController.m; sourceTree = "<group>"; tabWidth = 2; };
+		FF7B07021998D5A300D29606 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FF7B07041998D5FD00D29606 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FF7B07091998E87B00D29606 /* LSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLocation.h; sourceTree = "<group>"; };
+		FF7B070A1998E87B00D29606 /* LSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLocation.m; sourceTree = "<group>"; };
+		FF7B070C1998F26E00D29606 /* LSStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSStorage.h; sourceTree = "<group>"; };
+		FF7B070D1998F26E00D29606 /* LSStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSStorage.m; sourceTree = "<group>"; };
+		FF7B070F1998F47800D29606 /* LSBookmarkController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSBookmarkController.h; sourceTree = "<group>"; };
+		FF7B07101998F47800D29606 /* LSBookmarkController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSBookmarkController.m; sourceTree = "<group>"; };
+		FF7B07121998FD5600D29606 /* LSLocationDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSLocationDetail.h; sourceTree = "<group>"; };
+		FF7B07131998FD5600D29606 /* LSLocationDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSLocationDetail.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7B07051998D5FD00D29606 /* MapKit.framework in Frameworks */,
+				FF7B07031998D5A300D29606 /* CoreLocation.framework in Frameworks */,
 				FF7B06CD1998D37200D29606 /* CoreGraphics.framework in Frameworks */,
 				FF7B06CF1998D37200D29606 /* UIKit.framework in Frameworks */,
 				FF7B06CB1998D37200D29606 /* Foundation.framework in Frameworks */,
@@ -101,6 +119,8 @@
 		FF7B06C91998D37200D29606 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FF7B07041998D5FD00D29606 /* MapKit.framework */,
+				FF7B07021998D5A300D29606 /* CoreLocation.framework */,
 				FF7B06CA1998D37200D29606 /* Foundation.framework */,
 				FF7B06CC1998D37200D29606 /* CoreGraphics.framework */,
 				FF7B06CE1998D37200D29606 /* UIKit.framework */,
@@ -115,8 +135,16 @@
 				FF7B06D91998D37200D29606 /* LSAppDelegate.h */,
 				FF7B06DA1998D37200D29606 /* LSAppDelegate.m */,
 				FF7B06DC1998D37200D29606 /* Main.storyboard */,
-				FF7B06DF1998D37200D29606 /* LSViewController.h */,
-				FF7B06E01998D37200D29606 /* LSViewController.m */,
+				FF7B070F1998F47800D29606 /* LSBookmarkController.h */,
+				FF7B07101998F47800D29606 /* LSBookmarkController.m */,
+				FF7B07121998FD5600D29606 /* LSLocationDetail.h */,
+				FF7B07131998FD5600D29606 /* LSLocationDetail.m */,
+				FF7B06FF1998D55600D29606 /* LSMapViewController.h */,
+				FF7B07001998D55600D29606 /* LSMapViewController.m */,
+				FF7B07091998E87B00D29606 /* LSLocation.h */,
+				FF7B070A1998E87B00D29606 /* LSLocation.m */,
+				FF7B070C1998F26E00D29606 /* LSStorage.h */,
+				FF7B070D1998F26E00D29606 /* LSStorage.m */,
 				FF7B06E21998D37200D29606 /* Images.xcassets */,
 				FF7B06D11998D37200D29606 /* Supporting Files */,
 			);
@@ -250,9 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF7B070E1998F26E00D29606 /* LSStorage.m in Sources */,
+				FF7B070B1998E87B00D29606 /* LSLocation.m in Sources */,
+				FF7B07111998F47800D29606 /* LSBookmarkController.m in Sources */,
 				FF7B06D71998D37200D29606 /* main.m in Sources */,
+				FF7B07011998D55600D29606 /* LSMapViewController.m in Sources */,
 				FF7B06DB1998D37200D29606 /* LSAppDelegate.m in Sources */,
-				FF7B06E11998D37200D29606 /* LSViewController.m in Sources */,
+				FF7B07141998FD5600D29606 /* LSLocationDetail.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

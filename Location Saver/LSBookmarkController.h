@@ -1,5 +1,5 @@
 //
-//  LSViewController.h
+//  LSBookmarkController.h
 //  Location Saver
 //
 //  Created by Tomas Harkema on 11/08/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LSViewController : UIViewController
+@interface LSBookmarkController : UITableViewController
 
 @end
